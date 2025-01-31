@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +16,152 @@
 
      <!-- Tailwindcss cdn -->
      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- DaisyUi cdn links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
      <style type="text/tailwindcss">
         @theme {
         --font-sora: Sora, serif;
-        --color-accent: #179800;
-        --color-secondary: #EFEBE3;
-        --color-text: #111111;
+        --color-color01: #179800;
+        --color-color02: #EFEBE3;
+        --color-color03: #FFFFFF;
+        --color-color04: #111111;
         }
       </style>
 </head>
 <body class="font-sora">
-    <h1 class="text-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, molestiae?</h1>
+    <!-- header section starts here -->
+     <header class="bg-gradient-to-r from-violet-500 to-fuchsia-500 ">
+                <!-- navbar starts here -->
+                <nav class="container mx-auto p-6 flex  justify-between items-center my- border-b md:border-none ">
+                    <div>
+                        <img class="sm:hidden" src="assets/Group.png" alt="">
+                        <img class="w-36 h-14 hidden sm:block" src="assets/logo-header.png" alt="logo">
+                    </div>
+                    <div class="">
+                        <ul class="md:flex hidden font-semibold cursor-pointer">
+                            <li class="mx-[15px] text-[#3C3C3C] text-base">Product</li>
+                            <li class="mx-[15px] text-[#3C3C3C] text-base">services</li>
+                            <li class="mx-[15px] text-[#3C3C3C] text-base">Contact us</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                        <i class="hidden lg:block mr-3 text-4xl fa-solid fa-magnifying-glass"></i>
+                        <i class=" hidden lg:block mr-3 text-4xl fa-solid fa-cart-shopping"></i>
+                        <button class="hidden lg:block border border-[#179800] te py-3 px-5 rounded-lg">Login</button>
+                        <button class="hidden lg:block bg-[#179800] py-3 px-5 rounded-lg text-white">Register</button>
+                    </div>
+
+
+                    <div class="md:hidden">
+                        <a href="#" class="text-4xl text-[#179800]">&#8801</a>
+                    </div>
+                    
+                 </nav>
+                <!-- navbar ends here -->
+
+                <!-- banner section starts here -->
+
+                 <div class="flex flex-col items-center justify-center text-center mt-10">
+                    <div class="text-center lg:max-w[827px]">
+                        <h class="text-[32px] lg:text-[56px] font-semibold">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h>
+                        <p class="font-normal text-xl text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <span class="hidden lg:inline"><br></span> staples, we’ve got you covered every day!</p>
+                    </div>
+
+                    <img class="mt-10 w-full lg:w-3/4 max-w-5xl animate-bounc" src="assets/hero-vegetables.png" alt="">
+
+                 </div>
+
+                <!-- banner section ends here -->
+
+
+     </header>
+    <!-- header section ends here -->
+
+
+
+    <main>
+
+
+        <!-- Services section start here -->
+         <section class="w-10/11 md:container mx-auto my-12 lg:my-32">
+            <h1 class="font-semibold text-4xl text-[#179800]">Services</h1>
+
+            <div class="grid gap-4 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center ">
+                <!-- card -1 -->
+                <div class="flex flex-col items-center justify-center bg-[#efebe3] p-8 text-center space-y-3 rounded-2xl mt-12">
+                    <div class="bg-white p-5 rounded-full">
+                        <img src="assets/service.png" alt="">
+                    </div>
+                    <h3 class="font-semibold text-2xl">24/7 Services </h3>
+                    <p class="font-light text-xl">Our fresh vegetable and fruits are collected from rural farmers thriving to provide the most safe and fresh harvest to your doorstep.</p>
+                </div>
+                <!-- card -2 -->
+                <div class="flex flex-col items-center justify-center bg-[#efebe3] p-8 text-center space-y-3 rounded-2xl mt-12">
+                    <div class="bg-white p-5 rounded-full">
+                        <img src="assets/delivery.png" alt="">
+                    </div>
+                    <h3 class="font-semibold text-2xl">Fast Delivery</h3>
+                    <p class="font-light text-xl">Our fresh vegetable and fruits are collected from rural farmers thriving to provide the most safe and fresh harvest to your doorstep.</p>
+                </div>
+                <!-- card -3 -->
+                <div class="flex flex-col items-center justify-center bg-[#efebe3] p-8 text-center space-y-3 rounded-2xl mt-12">
+                    <div class="bg-white p-5 rounded-full">
+                        <img src="assets/healthy.png" alt="">
+                    </div>
+                    <h3 class="font-semibold text-2xl">Healthy Products </h3>
+                    <p class="font-light text-xl">Our fresh vegetable and fruits are collected from rural farmers thriving to provide the most safe and fresh harvest to your doorstep.</p>
+                </div>
+
+            </div>
+         </section>
+        <!-- Services  section end here -->
+
+
+
+        <!-- Popular Products section start here -->
+         <section class="w-10/11 md:container mx-auto my-12 lg:my-32">
+            <h1 class="font-semibold text-4xl text-[#179800]">Popular Products</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                <!-- image content -->
+                <div class="bg-linear-to-r from-cyan-500 to-blue-500">
+                    <h2>30% off</h2>
+                    <p></p>
+                    <img class="" src="assets/vegetable-offer.png" alt="Vegetable Offer">
+                </div>
+
+
+                <!-- product content -->
+                <div>
+
+                </div>
+
+            </div>
+         </section>
+        <!-- Popular Products section end here -->
+
+        <div class="w-full max-w-sm p-6 bg-gradient-to-br from-green-200 to-green-400 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold text-white">30% off</h2>
+            <p class="mt-2 text-sm text-white">
+                Discover a world of treats, toys, and essentials handpicked for
+            </p>
+            <button class="mt-4 bg-white text-green-600 font-medium px-4 py-2 rounded-lg shadow-md hover:bg-green-50">
+                Buy Now
+            </button>
+            <div class="mt-6">
+                <img class="w-full h-auto" src="assets/vegetable-offer.png" alt="Banana and Spinach">
+            </div>
+        </div>
+
+    </main>
+
+
+
+
 </body>
 </html>
