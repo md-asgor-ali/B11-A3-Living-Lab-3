@@ -293,7 +293,7 @@
         <!-- Arrival & Offers section start here -->
          <section class="w-10/11 md:container mx-auto my-12 lg:my-32">
             <h1 class="font-semibold text-4xl text-[#179800] mt-7">Arrival & Offers</h1>
-            <div class=" lg:flex gap-4">
+            <div class=" lg:flex gap-8">
                 <!-- offer 1 -->
                 <div class="flex bg-[#115414] rounded-xl mt-12 p-12">
 
@@ -309,9 +309,9 @@
 
                 </div>
                 <!-- offer 2 -->
-                <div class="flex bg-[#102861] rounded-xl mt-12 p-12">
+                <div class="flex span4/5 bg-[#102861] rounded-xl mt-12 p-12">
 
-                    <div class="flex flex-col justify-between items-center space-y-5">
+                    <div class="flex flex-col  justify-between items-center space-y-5">
                         <img src="assets/india-gate-logo.png" alt="">
                         <button class="bg-[#2a4d97] py-4 px-6 rounded-lg text-white">World’s No.1 Rice</button>
                         <h1 class="font-bold text-[40px] text-white">UP to <span>40% OFF</span></h1>
@@ -329,7 +329,7 @@
 
 
         <!-- Review section starts here  -->
-         <section class="w-10/11 md:container mx-auto mt-12 lg:mt-32">
+         <section class="w-10/11 md:container mx-auto my-32">
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-6 place-items-center">
 
@@ -414,26 +414,7 @@
         <!-- Review section ends here  -->
 
 
-        <!-- Get Grocery News! section start here -->
 
-         <section class="relative top-80 w-10/11 md:container mx-auto lg:my-32 bg-[#efebe3] rounded-3xl p-6 lg:p-14">
-            <div class="flex justify-evenly items-center ">
-                <div>
-                    <img src="assets/vegetable-busket.png" alt="">
-                </div>
-    
-                <div class="space-y-6">
-                    <h1 class="font-semibold text-4xl">Get Grocery News!</h1>
-                    <p class="font-normal text-xl">Exclusive training tips, ticks, product deals and more.</p>
-                    <input class="p-5 rounded-lg " type="text" placeholder="Enter email....">
-                    <br>
-                    <button class="bg-[#179800] py-3 px-5 rounded-lg text-white">Subscribe</button>
-                </div>
-            </div>
-         </section>
-
-
-        <!-- Get Grocery News! section end here -->
 
         
 
@@ -441,42 +422,64 @@
     </main>
 
 
-    <!-- footer section starts here -->
+      <!-- Footer Section Starts -->
+      <footer class="relative bg-[#179800]  text-white py-16 mt-20">
+        
+        <!-- Newsletter Subscription Section -->
+        <section class="absolute -top-16 w-11/12 md:w-9/12 lg:w-7/12 left-1/2 transform -translate-x-1/2 bg-[#efebe3] rounded-3xl p-6 lg:p-10 shadow-lg text-black">
+            <div class="flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
+                <img src="assets/vegetable-busket.png" alt="Vegetable Basket" class="w-32 md:w-40">
+                
+                <div class="w-full">
+                    <h1 class="font-semibold text-3xl lg:text-4xl">Get Grocery News!</h1>
+                    <p class="text-lg mt-2">Exclusive tips, tricks, and product deals.</p>
 
-    <footer class=" bg-[#179800] p-30 lg:p-36 ">
-
-        <div class="grid grid-cols-1 space-y-6 lg:grid-cols-3 w-10/11 md:container mx-auto justify-between lg:place-items-center mt-20">
-
-            <div class="">
-                <img src="assets/logo-footer.png" alt="">
-                <p class=" text-white font-normal text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
-            </div>
-
-            <div>
-                <div class="">
-                    <ul class=" font-semibold cursor-pointer space-y-6">
-                        <li class="mx-[15px] text-white text-base">Product</li>
-                        <li class="mx-[15px] text-white text-base">services</li>
-                        <li class="mx-[15px] text-white text-base">Contact us</li>
-                    </ul>
+                    <div class="mt-4 flex flex-col md:flex-row gap-3">
+                        <input type="email" class="p-3 rounded-lg w-full md:w-64 border border-gray-300" placeholder="Enter email...">
+                        <button class="bg-green-700 py-3 px-6 rounded-lg text-white font-medium hover:bg-green-800 transition">Subscribe</button>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="text-white">
-                <h3 class=" font-medium text-lg">Follow Us</h3>
-                <div>
-                    <i class="fa-brands fa-facebook mr-4 text-3xl"></i>
-                    <i class="fa-brands fa-instagram mr-4 text-3xl"></i>
-                    <i class="fa-brands fa-linkedin mr-4 text-3xl"></i>
-                    <i class="fa-brands fa-youtube mr-4 text-3xl"></i>
+        <!-- Footer Content -->
+        <div class="container mx-auto px-6 lg:px-20 mt-40 md:mt-32 grid grid-cols-1 md:grid-cols-3 gap-10  md:text-left">
+
+
+            <!-- Logo & Description -->
+            <div class="mt-40 md:mt-0  md:text-left">
+                <img class="" src="assets/logo-footer.png" alt="Company Logo" class="mx-auto md:mx-0 w-32">
+                <p class="mt-4 text-lg">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="hover:underline">Products</a></li>
+                    <li><a href="#" class="hover:underline">Services</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex  md:justify-start space-x-6">
+                    <i class="fa-brands fa-facebook text-3xl cursor-pointer hover:text-gray-300"></i>
+                    <i class="fa-brands fa-instagram text-3xl cursor-pointer hover:text-gray-300"></i>
+                    <i class="fa-brands fa-linkedin text-3xl cursor-pointer hover:text-gray-300"></i>
+                    <i class="fa-brands fa-youtube text-3xl cursor-pointer hover:text-gray-300"></i>
                 </div>
             </div>
 
         </div>
 
-    </footer>
 
-    <!-- footer section ends here -->
+
+    </footer>
+    <!-- Footer Section Ends -->
+
 
 
 
