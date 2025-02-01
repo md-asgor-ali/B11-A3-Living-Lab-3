@@ -23,13 +23,13 @@
 
     
      <style type="text/tailwindcss">
-        @theme {
+        /* @theme {
         --font-sora: Sora, serif;
         --color-color01: #179800;
         --color-color02: #EFEBE3;
         --color-color03: #FFFFFF;
         --color-color04: #111111;
-        }
+        } */
         /* *{
             border: 1px solid red;
         } */
@@ -75,7 +75,7 @@
                         <p class="font-normal text-xl text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <span class="hidden lg:inline"><br></span> staples, we’ve got you covered every day!</p>
                     </div>
 
-                    <img class="mt-10 w-full lg:w-3/4 max-w-5xl animate-bounc" src="assets/hero-vegetables.png" alt="">
+                    <img class="mt-10 w-full lg:w-3/4 max-w-5xl animate-bounce" src="assets/hero-vegetables.png" alt="">
 
                  </div>
 
@@ -127,35 +127,30 @@
 
 
         <!-- Popular Products section start here -->
-         <section class=" my-12 lg:my-30 bg-[#efebe3]">
+         <section class=" my-12 md:my-20 lg:my-32 bg-[#efebe3]">
             <!-- Section Heading -->
             <div class="my-10 md:container mx-auto">
-                <h1 class=" my-5 font-semibold text-4xl text-[#179800] ">Popular Products</h1>
-                <div class="  lg:flex col-span-2 gap-4 justify-between items-center mt-5 ">
+                <h1 class=" mt-6 font-semibold text-4xl text-[#179800] ">Popular Products</h1>
+                <div class="  grid lg:grid-cols-3 gap-6 mt-10 ">
     
                     <!-- image content -->
-                    <div class="bg-[#56db3e]   p-8 rounded-xl relative">
-    
-    
-                        <div class="space-y-6">
-                            <h1 class="text-xl font-semibold text-white">30% off</h1>
-                            <p>Discover a world of treats, toys, and essential handpicked for</p>
-                            <button class="bg-white py-3 px-5 rounded-lg">Buy Now</button>
+                    <div class="bg-[#56db3e] p-6 md:p-8 rounded-xl relative flex flex-col justify-between mb-10">
+                        <div class="space-y-4 text-center sm:text-left">
+                            <h1 class="text-xl md:text-2xl font-semibold text-white">30% off</h1>
+                            <p class="text-white text-sm md:text-base">Discover a world of treats, toys, and essentials handpicked for you.</p>
+                            <button class="bg-white py-2 px-4 rounded-lg text-[#179800] font-medium">Buy Now</button>
                         </div>
-                        <div class="absolute bottom-0 right-0 ">
-                            <img class="max-w-36 z-10 " src="assets/vegetable-offer.png" alt="">
+                        <div class="absolute bottom-0 right-0 w-24 md:w-32">
+                            <img src="assets/vegetable-offer.png" alt="Vegetable Offer" class="max-w-full">
                         </div>
-    
-    
-    
                     </div>
     
     
                     <!-- product content -->
-                    <div class=" space-y-4 grid gap-4 grid-cols-2 lg:col-span-6  lg:grid-cols-3 justify-center items-center place-items-center mb-14">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 lg:col-span-2 mb-10 ">
     
                         <!-- card-1 -->
-                        <div class="flex bg-white p-4  rounded-lg w-[275px] h-[118px] ">
+                        <div class="flex bg-white p-4  rounded-lg lg:w-[275px] h-[118px] ">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 43.png" alt="">
                             </div>
@@ -169,7 +164,7 @@
                             </div>
                         </div>
                         <!-- card-2 -->
-                        <div class="flex bg-white p-4 rounded-lg w-[275px] h-[118px] ">
+                        <div class="flex bg-white p-4 rounded-lg lg:w-[275px] h-[118px] ">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 41.png" alt="">
                             </div>
@@ -183,7 +178,7 @@
                             </div>
                         </div>
                         <!-- card-3 -->
-                        <div class="flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class="flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 44.png" alt="">
                             </div>
@@ -197,7 +192,7 @@
                             </div>
                         </div>
                         <!-- card-4 -->
-                        <div class="flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class="flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 44.png" alt="">
                             </div>
@@ -211,7 +206,7 @@
                             </div>
                         </div>
                         <!-- card-5 -->
-                        <div class="flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class="flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 43.png" alt="">
                             </div>
@@ -225,7 +220,7 @@
                             </div>
                         </div>
                         <!-- card-6 -->
-                        <div class="flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class="flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 43.png" alt="">
                             </div>
@@ -240,7 +235,7 @@
                         </div>
     
                         <!-- card-7 -->
-                        <div class="flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class="flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 43.png" alt="">
                             </div>
@@ -254,7 +249,7 @@
                             </div>
                         </div>
                         <!-- card-8 -->
-                        <div class="flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class="flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 41.png" alt="">
                             </div>
@@ -268,7 +263,7 @@
                             </div>
                         </div>
                         <!-- card-9 -->
-                        <div class="   flex bg-white p-4 w-[275px] h-[118px] rounded-lg">
+                        <div class=" hidden  sm:flex bg-white p-4 lg:w-[275px] h-[118px] rounded-lg">
                             <div class="bg-[#efebe3] rounded-lg h-[86px] w-[86px] flex flex-col justify-center items-center">
                                 <img class="" src="assets/image 44.png" alt="">
                             </div>
@@ -290,42 +285,41 @@
         <!-- Popular Products section end here -->
 
 
-        <!-- Arrival & Offers section start here -->
-         <section class="w-10/11 md:container mx-auto my-12 lg:my-32">
-            <h1 class="font-semibold text-4xl text-[#179800] mt-7">Arrival & Offers</h1>
-            <div class=" lg:flex gap-8">
-                <!-- offer 1 -->
-                <div class="flex bg-[#115414] rounded-xl mt-12 p-12">
+         <!-- Arrival & Offers section start here -->
+            <section class="w-11/12 md:w-10/12 mx-auto my-12 lg:my-32">
+<h1 class="font-semibold text-4xl text-[#179800] mt-7 text-center md:text-left">Arrival & Offers</h1>
 
-                    <div class="flex flex-col   space-y-5">
-                        <img src="assets/dawat-logo.png" alt="">
-                        <button class="bg-[#63b76d] py-4 px-6 rounded-lg text-white">Cook Exotic Dishes</button>
-                        <h1 class="font-bold text-[40px] text-white">UP to <span>20% OFF</span></h1>
-                    </div>
+<!-- Offers Container -->
+<div class="flex flex-col md:flex-row gap-6 lg:gap-8 mt-12">
 
-                    <div>
-                        <img src="assets/dawat-mock-up.png" alt="">
-                    </div>
+    <!-- Offer 1 -->
+    <div class="flex flex-col sm:flex-row items-center bg-[#115414] rounded-xl p-6 sm:p-8 md:p-12 w-full">
+        <div class="flex flex-col space-y-4 text-center sm:text-left">
+            <img src="assets/dawat-logo.png" alt="Dawat Logo" class="w-28 sm:w-32 mx-auto sm:mx-0">
+            <button class="bg-[#63b76d] py-3 px-5 rounded-lg text-white">Cook Exotic Dishes</button>
+            <h1 class="font-bold text-3xl md:text-[40px] text-white">UP to <span>20% OFF</span></h1>
+        </div>
+        <div class="mt-4 sm:mt-0">
+            <img src="assets/dawat-mock-up.png" alt="Dawat Mockup" class="w-full max-w-[180px] sm:max-w-[200px]">
+        </div>
+    </div>
 
-                </div>
-                <!-- offer 2 -->
-                <div class="flex span4/5 bg-[#102861] rounded-xl mt-12 p-12">
+    <!-- Offer 2 -->
+    <div class="flex flex-col sm:flex-row items-center bg-[#102861] rounded-xl p-6 sm:p-8 md:p-12 w-full">
+        <div class="flex flex-col space-y-4 text-center sm:text-left">
+            <img src="assets/india-gate-logo.png" alt="India Gate Logo" class="w-28 sm:w-32 mx-auto sm:mx-0">
+            <button class="bg-[#2a4d97] py-3 px-5 rounded-lg text-white">World’s No.1 Rice</button>
+            <h1 class="font-bold text-3xl md:text-[40px] text-white">UP to <span>40% OFF</span></h1>
+        </div>
+        <div class="mt-4 sm:mt-0">
+            <img src="assets/india-gate-mock-up.png" alt="India Gate Mockup" class="w-full max-w-[180px] sm:max-w-[200px]">
+        </div>
+    </div>
 
-                    <div class="flex flex-col  justify-between items-center space-y-5">
-                        <img src="assets/india-gate-logo.png" alt="">
-                        <button class="bg-[#2a4d97] py-4 px-6 rounded-lg text-white">World’s No.1 Rice</button>
-                        <h1 class="font-bold text-[40px] text-white">UP to <span>40% OFF</span></h1>
-                    </div>
-
-                    <div>
-                        <img src="assets/india-gate-mock-up.png" alt="">
-                    </div>
-
-                </div>
-
-            </div>
-         </section>
+</div>
+            </section>
         <!-- Arrival & Offers section end here -->
+
 
 
         <!-- Review section starts here  -->
